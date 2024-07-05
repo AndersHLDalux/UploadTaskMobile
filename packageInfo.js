@@ -1,1 +1,1 @@
-var DKI_Package_Info = {"date":"July, 05 2024 08:03:50","publishing_profile_id":"0FAD244C-E9EA-703A-AC1A-1415F005DB4F","version":"7.4.3.11","claro_url":"https://app.authr.it/"};
+var DKI_Package_Info = {"date":"July, 05 2024 08:52:31","publishing_profile_id":"1C9AD423-0F9F-B6A9-7C6F-CBE133BD39ED","version":"7.4.3.11","claro_url":"https://app.authr.it/"};
