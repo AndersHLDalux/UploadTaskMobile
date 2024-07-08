@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:pkgprop="http://www.scorm.com/xsd/ScormEnginePackageProperties" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lomLoose.xsd                           http://www.scorm.com/xsd/ScormEnginePackageProperties ScormEnginePackageProperties.xsd">
+	<general>
+		<!--****** 2 ******-->
+		<identifier>
+			<catalog>claro_226A15A6737D5CBF47B5F821ECEC7CBA</catalog>
+			<entry>claro_226A15A6737D5CBF47B5F821ECEC7CBA</entry>
+		</identifier>
+		<!--****** 1 ******-->
+		<title>
+			<string language="en-US">Introduction to the Construction Industry</string>
+		</title>
+		<language>en-US</language>
+		<!--****** 3 ******-->
+		<description>
+			<string language="en-US">Dalux academy</string>
+		</description>
+		<!--****** 4 ******-->
+	<keyword><string language="en-US">none</string></keyword></general>
+	<lifeCycle>
+		<!--****** 5 ******-->
+		<version>
+			<string language="en-US">0</string>
+		</version>
+		<status>
+			<source>LOMv1.0</source>
+			<value>final</value>
+		</status>
+	</lifeCycle>
+	<metaMetadata>
+		<metadataSchema>LOMv1.0</metadataSchema>
+		<metadataSchema>SCORM_CAM_v1.3</metadataSchema>
+	</metaMetadata>
+	<technical>
+		<!--****** 6 ******-->
+		<format>text/html</format>
+		<pkgprop:ScormEnginePackageProperties xmlns="http://www.scorm.com/xsd/ScormEnginePackageProperties">
+			<behavior>
+				<invokeRollupAtSuspendAll>yes</invokeRollupAtSuspendAll>
+			</behavior>
+		</pkgprop:ScormEnginePackageProperties>
+	<format>text/html</format><format>application/x-shockwave-flash</format></technical>
+	<rights>
+		<!--****** 7 ******-->
+		<cost>
+			<source>LOMv1.0</source>
+			<value>no</value>
+		</cost>
+		<!--****** 8 ******-->
+		<copyrightAndOtherRestrictions>
+			<source>LOMv1.0</source>
+			<value>no</value>
+		</copyrightAndOtherRestrictions>
+	</rights>
+	<classification>
+		<purpose>
+			<source>LOMv1.0</source>
+			<value>educational objective</value>
+		</purpose>
+		<!--****** 9 ******-->
+		<description>
+			<string language="en-US">Dalux academy</string>
+		</description>
+		<!--****** 10 ******-->
+	<keyword><string language="en-US">none</string></keyword></classification>
+</lom>
