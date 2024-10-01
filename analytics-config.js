@@ -3,13 +3,13 @@
 
 //
 // ActivityID that is sent for the statement's object
-ANALYTICS_COURSE_ID = "https://app.authr.it/activities/course/112136";
+ANALYTICS_COURSE_ID = "https://app.authr.it/activities/course/114031";
 
 //
 // CourseName for the activity
 //
 ANALYTICS_COURSE_NAME = {
-    "en-US": "Anders\'s Playground"
+    "en-US": "Educational Agreement"
 };
 
 //

@@ -17,12 +17,19 @@
 				"<p id=\"screenCount\" tabindex=\"1\"><span class=\"currentScreen\">0</span> / <span class=\"totalScreens\">0</span></p>" +
 			"</div>" +
 			"<div id=\"header_course_time\" class=\"course_time reading-time\" tabindex=\"1\"></div>" +
+			
 			"<div id=\"search_wrapper\">" + 
 				"<i class=\"fa fa-search\" tabindex=\"1\" aria-label=\"{{strings.courseSearch.title}}\"></i>" + 
 			"</div>" + 
+			'<div class="language_wrapper">' +
+				'<a id="navmenu_language" href=\"#\" class="navmenu-link" tabindex="1" aria-label="{{>currentLanguageDisplay}}">' +
+					'<i class=\"fa fa-globe menu-icon\"></i>' +
+				'</a>' +
+			'</div>' +
 			"<div id=\"page_title_wrapper\">" +
 				"<h1 id=\"page_title\" tabindex=\"1\">{{{title}}}</h1>" +
 			"</div>" +
+			
 			"<div id=\"current_page_time\" class=\"text-warning reading-time\" tabindex=\"1\"></div>" +
 			"<div id=\"regular-progress\" class=\"progress-wrapper\">" +
 				"<div class=\"progress clearfix dki-course-max-width\">" +
@@ -43,10 +50,16 @@
 		"<nav id=\"left_menu\" class=\"navmenu navmenu-default navmenu-fixed-left offcanvas\">" +
 			"<div id=\"menu_top\" class=\"bg-primary\">" +
 				"<div id=\"menu_top_content\">" +
+					'<div class="language_wrapper">' +
+						'<a id="navmenu_language" href=\"#\" tabindex=\"1\" class="navmenu-link" aria-label="{{>currentLanguageDisplay}}">' +
+							'<i class=\"fa fa-globe menu-icon\"></i> {{>currentLanguageDisplay}}' +
+						'</a>' +
+					'</div>' +
 					"<div id=\"branding\">" +
 						"<span id=\"navbar_logo_wrapper\"><span id=\"navbar_logo\"></span></span>" +
 						//"<span class=\"h4\">Company Branding</span>" +
 					"</div>" +
+					
 					"<h3 id=\"menu_course_title\" tabindex=\"1\" aria-label=\"{{{courseTitleLabel}}}\"><span>{{{courseTitle}}}</span></h3>" +
 					"<div id=\"start_course_button\">" +
 						"<button class=\"btn btn-default\" tabindex=\"1\"></button>" +
@@ -133,6 +146,9 @@
 
 		if($("html").hasClass("fullmenu")){
 			$("$menu_course_title")[0].focus();
+		}
+		if(settings.course_languages.length == 1){
+			dom.menu.find(".language_wrapper").remove();
 		}
 	};
 
@@ -259,7 +275,10 @@
 					var header = $(Handlebars.compile(templates.page_header)({	
 						strings: DKI.strings,
 						title: page.title
-					}));				
+					}));
+					if(settings.course_languages.length == 1){
+						header.find(".language_wrapper").remove();
+					}				
 					if(parent.find(".page_header").length == 0){
 						parent.prepend(header);
 						header.find("#regular-progress").waypoint(DKI.apply(DKI.ContentPage.waypointDefaults, {

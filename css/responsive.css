@@ -33,6 +33,10 @@ html.on-desktop .online .dkiContentFrame, html.on-desktop .online #contentFrame{
 	padding-right: 0px;
 }
 
+html .dkiContentFrame{
+	overflow: clip;
+}
+
 .cssFX div.cssFX-level1,
 .cssFX div.cssFX-level1 div.cssFX-level2,
 .cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3,
@@ -74,7 +78,7 @@ html.noNav .online .dkiContentFrame, html.noNav .online #contentFrame, .tablet .
 .bgRepeater, #contentFrame{
 	width: 100% !important;
 	background-color: transparent;
-	overflow-x: hidden;
+	overflow-x: clip;
 }
 .pageElementsWrapper{	
 	width: 100%;
